@@ -1,5 +1,13 @@
 {
+  "version": 2,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/elderly-assistant/$1" }
+    {
+      "source": "/api/(.*)",
+      "destination": "/elderly-assistant/backend/server.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/elderly-assistant/frontend/index.html"
+    }
   ]
 }
